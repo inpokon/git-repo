@@ -1,0 +1,46 @@
+.item
+	margin-top: 98px
+	&-img
+		&__big
+			display: flex
+			min-height: 542px
+			width: 100%
+			transition: all 1s ease
+			&:hover
+				filter: grayscale(100%)
+			&_one
+				background: url(../img/item/item-1.jpg) center no-repeat
+				margin-bottom: 20px
+			&_two
+				background: url(../img/item/item-4.jpg) center no-repeat
+		&__small
+			display: flex
+			min-height: 261px
+			width: 100%
+			&:hover
+				filter: grayscale(100%)
+			&_one
+				background: url(../img/item/item-2.jpg) center no-repeat
+			&_two
+				background: url(../img/item/item-3.jpg) center no-repeat
+				margin-bottom: 20px
+		&__text
+			background-color: #ffffff
+			position: absolute
+			margin-top: 26px
+			padding: 16px 20px
+			text-decoration: none
+		&__subtitle
+			color: $text-color-dark
+			font-family: "Lato", sans-serif
+			font-size: 18px
+			font-weight: 400
+			text-transform: uppercase
+			letter-spacing: 0.45px
+		&__title
+			color: $active-color
+			font-family: "LatoBlack", sans-serif
+			font-weight: 400
+			text-transform: uppercase
+			font-size: 30px
+			letter-spacing: 0.75px

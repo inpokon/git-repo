@@ -1,0 +1,138 @@
+.review
+  background: url("../img/review-bg.jpg") repeat
+  &-box
+    background-color: $text-color-light
+  &-title
+    padding-top: 120px
+    margin: 0
+    text-align: center
+    overflow: hidden
+    font-weight: 700
+    font-size: 24px
+    position: relative
+    span
+      //padding-top: 20px
+      color: $text-color-dark
+      text-transform: uppercase
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      border-top: 1px solid $color-light
+      margin-top: .6em
+      margin-left: 2%
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      border-top: 1px solid $color-light
+      margin-top: .6em
+      margin-left: -102%
+    &_after
+      &::after
+        content: ''
+        width: 40px
+        height: 3px
+        margin: 0 auto
+        background-color: $active-color
+        display: block
+        transform: translateY(-46px)
+      &::before
+        content: url("../img/cut.jpg")
+        width: 40px
+        height: 3px
+        display: block
+        transform: translateY(-34px)
+  &-catalog
+    margin-top: 40px
+    &_box
+      padding-right: 27px
+  &-form
+    background-color: $bg-color-light
+    padding: 30px 30px 20px 30px
+    margin-bottom: 28px
+    display: none
+    textarea
+      border: 1px solid #dadbdc
+      width: 100%
+      padding: 20px
+      font-size: 16px
+      font-style: italic
+      resize: none
+      min-height: 150px
+    input
+      border: 1px solid #dadbdc
+      padding: 10px 21px
+      margin-top: 27px
+      color: #595358
+      font-size: 16px
+      font-style: italic
+      width: 290px
+    button
+      background-color: $active-color
+      padding: 10px 111px
+      border: 1px solid $active-color
+      color: $text-color-light
+      float: right
+      margin-top: 27px
+      font-size: 16px
+      font-weight: 300
+      transition: all 0.2s
+      &:hover
+        cursor: pointer
+        background-color: $bg-color-light
+        color: $active-color
+  &-written
+    &-box
+      margin-top: 12px
+      margin-bottom: 102px
+    &_title
+      width: 94%
+      margin: 0 auto
+      color: #595358
+      font-size: 20px
+      font-weight: 400
+      display: block
+      padding: 21px 0 10px 22px
+      span
+        color: #8a888a
+        font-size: 16px
+        font-weight: 500
+        display: inline-block
+        float: right
+        margin-right: 3px
+    &_bg
+      background-color: $bg-color-light
+    &_descr
+      position: relative
+      i
+        position: absolute
+        font-size: 16px
+      &_one
+        left: -6px
+        top: 0
+      &_two
+        right: -5px
+        bottom: -2px
+      &__p
+        width: 94%
+        margin: 0 auto
+        color: #595358
+        font-size: 16px
+        font-weight: 300
+        line-height: 20px
+        border: 1px solid #595358
+        padding: 15px 15px 18px 20px
+    &_red
+      color: $active-color
+      &__two
+        border: 1px solid $active-color
+        margin-bottom: 25px
+  &-look
+    float: right
+    margin-bottom: 129px
+    margin-top: 8px
+    margin-right: 57px
+    color: $active-color
+    font-size: 18px
+    font-weight: 300

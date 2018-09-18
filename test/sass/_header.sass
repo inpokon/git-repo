@@ -1,0 +1,122 @@
+.header
+  position: relative
+  margin: 0
+  padding: 0
+  border-top: 1px solid $active-color
+  background-color: $text-color-light
+.description
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: $text-color-dark
+  line-height: 27px
+  &-subtitle
+    font-size: 20px
+    font-weight: bold
+    text-transform: uppercase
+  &-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-title
+    font-size: 29px
+    font-weight: 300
+    margin-right: 52px
+    line-height: 36px
+    span
+      display: block
+      font-size: 33px
+      font-weight: 500
+      text-transform: uppercase
+  &-logo
+    margin-left: 132px
+    margin-top: 17px
+    margin-bottom: 10px
+  &-info
+    ul
+      padding: 0
+      li
+       list-style: none
+    a
+      text-decoration: none
+      font-size: 20px
+      font-weight: 300
+      color: $text-color-dark
+      transition: all 0.2s
+      line-height: 23px
+      img
+        margin-right: 15px
+        filter: grayscale(100%)
+        transition: all 0.2s
+        &:last-child
+          filter: grayscale(0)
+      span
+        font-weight: 500
+      &:hover
+        color: $active-color
+        img
+         filter: grayscale(0)
+    &_request
+      text-transform: uppercase
+      font-size: 16px
+      color: $active-color
+      font-weight: 300
+nav
+  background-color: $bg-color-light
+  width: 100%
+  z-index: 2500
+  border-top: 1px solid #edebeb
+  box-shadow: 0 5px 5px -5px rgba(0,0,0,0.5)
+  ul
+    display: flex
+    justify-content: space-between
+    padding: 0
+    margin: 0
+    li
+      list-style: none
+      padding: 17px 17px
+      border-right: 1px dotted #edebeb
+      &:last-child
+        border-right: none
+        padding-right: 4px
+      &:first-child
+        padding-left: 4px
+      a
+        text-decoration: none
+        color: $text-color-dark
+        font-size: 18px
+        font-weight: 500
+        text-transform: uppercase
+        &::after
+          content: ''
+          width: 100%
+          height: 3px
+          background-color: $active-color
+          display: block
+          transform: translateY(16px) scale(0)
+          transition: all 0.2s
+        &:hover
+          text-decoration: none
+          color: $active-color
+          &::after
+            transform: translateY(16px) scale(1)
+.fixed
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+.active
+  text-decoration: none
+  color: $active-color
+  font-size: 18px
+  font-weight: 500
+  text-transform: uppercase
+  &::after
+    content: ''
+    width: 100%
+    height: 3px
+    background-color: $active-color
+    display: block
+    transform: translateY(16px) scale(1)
+    transition: all 0.2s
+

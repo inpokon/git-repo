@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../investstroy/wp-content/themes/invest-theme/.idea/invest-theme.iml" filepath="$PROJECT_DIR$/../investstroy/wp-content/themes/invest-theme/.idea/invest-theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/investstroy.iml" filepath="$PROJECT_DIR$/.idea/investstroy.iml" />
+    </modules>
+  </component>
+</project>
