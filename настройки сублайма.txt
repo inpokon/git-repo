@@ -1,0 +1,14 @@
+{
+	"color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
+	"font_face": "Consolas",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Bootstrap 3 Autocomplete",
+		"Vintage"
+	],
+	"save_on_focus_lost": true,
+	"tab_size": 1,
+	"tabs_small": true,
+	"theme": "Brogrammer.sublime-theme"
+}
