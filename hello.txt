@@ -1,1 +1,3 @@
 Hello;
+Hello my friend;
+Hi;
