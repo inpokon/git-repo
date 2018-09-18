@@ -1,0 +1,117 @@
+.section
+	&-title
+		font-size: 27px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		&::after
+			content: ''
+			display: block
+			margin-top: 12px
+			height: 6px
+			background: url(../img/line.png) center no-repeat
+
+.button
+	font-size: 14px
+	background-color: $active-color
+	border: 1px solid $active-color
+	color: $text-color-light
+	padding: 13px 22px
+	border-radius: 5px
+	font-family: 'Roboto'
+	font-weight: 500
+	&:hover
+		background-color: darken($active-color, 10)
+		cursor: pointer
+	&-o 
+		background-color: transparent
+		color: $text-color-dark
+		border: 1px solid #373737
+		opacity: 0.5
+		&:hover
+		 background-color: darken($bg-color-light, 10)
+		 border: 1px solid transparent
+		 cursor: pointer
+	img
+		vertical-align: middle
+	&_big
+		padding-top: 20px
+		padding-bottom: 20px
+		vertical-align: middle
+.arrow 
+ position: absolute
+ top: 50%
+ transform: translateY(-50%)
+ width: 2rem
+ height: 6rem
+.prev
+ background: url(../img/prev-arrow.png) center no-repeat
+ left: -3.5rem
+ background-size: 60%
+.next
+ background: url(../img/next-arrow.png) center no-repeat
+ right: -3.5rem
+ background-size: 60%
+
+.menu
+ &-link
+ 	display: none
+ 	width: 50px
+ 	height: 50px
+		background-color: #fff
+ 	border-radius: 50%
+		box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+ 	position: fixed
+ 	z-index: 2500
+ 	top: 10px
+ 	left: 10px
+ 	span, span::before, span::after
+ 		display: block
+ 		height: 2px
+ 		width: 18px
+ 		position: absolute
+ 		left: 50%
+ 		margin-left: -9px
+ 		top: 50%
+ 		margin-top: -1px
+ 		background-color: #333
+ 	span::before
+ 		transition: all 0.2s
+ 		content: ''
+ 	 margin-top: -6px
+ 	span::after
+ 		transition: all 0.2s
+ 		content: ''
+ 	 margin-top: 4px
+ 	&_active
+ 		span
+ 			background-color: transparent
+ 			&::before
+ 				transform: rotate(135deg)
+ 				margin-top: 0
+				&::after
+ 				transform: rotate(-135deg)
+ 				margin-top: 0
+ &-ul
+ 	position: fixed
+ 	z-index: 2500
+ 	width: 100vh
+ 	background-color: $text-color-dark
+ 	margin: 0 -10% 0 -10%
+ 	padding: 5% 0 5% 15%
+ 	left: -250vw
+ 	transition: all 0.4s
+ 	&_active
+ 		left: 0
+ 	li
+ 		list-style: none
+ 		a
+ 			text-decoration: none
+ 			text-transform: uppercase
+ 			font-size: 9px
+ 			font-weight: 400
+ 			line-height: 22px
+ 			color: $text-color-light
+ 			&:hover
+ 				color: $active-color
+

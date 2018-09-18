@@ -1,0 +1,50 @@
+.header
+	&_block
+		padding-top: 55px
+	&-logo
+		background: url(../img/logo-header.png) center no-repeat
+		background-size: 100%
+		width: 191px
+		height: 61px
+		margin-bottom: 10px
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		a 
+			text-decoration: none
+			color: $text-color-dark
+		&__phone
+			&s
+				display: flex
+			font-size: 22px
+			margin-right: 13px
+			font-weight: 500
+			&:first-child
+				border-right: 1px solid #cfcfd0
+				padding-right: 13px
+	&-nav
+		background-color: $text-color-dark
+		position: fixed
+		z-index: 2500
+		width: 100%
+		ul
+			display: flex
+			margin: 0
+			padding: 10px 0
+			justify-content: space-between
+			li
+				padding: 2px 0 2px 15px
+				list-style: none
+				border-left: 1px dotted #5f5f5f
+				&:first-child
+					border: none
+				a
+					text-decoration: none
+					text-transform: uppercase
+					font-size: 12px
+					font-weight: 400
+					line-height: 22px
+					color: $text-color-light
+					&:hover
+						color: $active-color
